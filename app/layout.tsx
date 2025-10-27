@@ -8,9 +8,8 @@ import { Navigation } from "@/components/navigation";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "XYZ - Portfolio",
-  description:
-    "Portfolio of XYZ, economist and business strategist specializing in innovation economics and strategic consulting.",
+  title: "Shiven - Portfolio",
+  description: "Portfolio of Shiven",
   generator: "Digitrix Solutions",
 };
 
