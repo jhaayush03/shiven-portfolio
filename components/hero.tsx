@@ -22,23 +22,32 @@ export function Hero() {
           {/* Right Side - Introduction Text */}
           <div className="flex flex-col justify-center space-y-6 lg:pl-8">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900">
-              Hi There
+              Hi there — I’m Shiven.
             </h1>
 
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
               <p>
-                I'm a passionate student, entrepreneur, investor, researcher,
-                and athlete. My interests span across finance, entrepreneurship,
-                sports, and research. I believe in the power of continuous
-                learning and pushing boundaries in every aspect of life.
+                I’m the kind of person who once woke up at 4:30 AM for swim
+                practice, spent the afternoon arguing about Fama-French factors,
+                and then ended the day powerlifting to Nas’s Illmatic. (Yes, I
+                contain multitudes.) I’m currently a high-school student with a
+                mild obsession for markets, contrarian investing, and ideas that
+                make experts tilt their heads a little and say, “Huh. That’s
+                interesting.” I co-founded initiatives like InveshAI, Dwaar and
+                BizForHer, because I saw problems and decided someone had to
+                stop just talking about them.
               </p>
 
               <p>
-                Whether I'm analyzing investment opportunities, building
-                ventures, conducting research, or training for athletic goals, I
-                approach each endeavor with dedication and a growth mindset. I'm
-                always excited to connect with like-minded individuals and
-                explore new opportunities.
+                When I’m not knee-deep in spreadsheets or podcasting with fund
+                managers, you’ll probably find me trekking through the Aravalis,
+                cycling absurd distances for “fun,” or explaining distressed
+                equities at social gatherings where absolutely no one asked. My
+                friends call me a “shapeshifter of uniforms,” swimmer trunks,
+                powerlifting belt, kurta with a tabla, or a blazer at an
+                investment pitch. I call it refusing to pick just one life.
+                Welcome to my corner of the internet. No jargon. No
+                LinkedIn-speak. Just the story, unpolished and honest.
               </p>
             </div>
 
