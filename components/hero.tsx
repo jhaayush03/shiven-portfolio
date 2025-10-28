@@ -14,18 +14,18 @@ export function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center min-h-[calc(100vh-180px)]">
           {/* Left Side - Professional Photo */}
           <div className="flex justify-center lg:justify-start">
-            <div className="relative w-full max-w-sm aspect-[3/3.5] overflow-hidden rounded-lg shadow-2xl">
+            <div className="relative w-full max-w-sm aspect-[2.5/3.5] overflow-hidden rounded-lg shadow-2xl">
               <img src="/1.jpg" alt="" className="h-full w-full object-cover" />
             </div>
           </div>
 
           {/* Right Side - Introduction Text */}
           <div className="flex flex-col justify-center space-y-6 lg:pl-8">
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
               Hi there — I’m Shiven.
             </h1>
 
-            <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
+            <div className="space-y-4 text-amber-50 text-gray-600 leading-relaxed">
               <p>
                 I’m the kind of person who once woke up at 4:30 AM for swim
                 practice, spent the afternoon arguing about Fama-French factors,
