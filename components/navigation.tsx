@@ -5,12 +5,12 @@ import { Button } from "@/components/ui/button";
 
 const navSections = [
   {
-    title: "Honours/Awards",
+    title: "Awards",
     items: [
       "Berkeley Stock Pitch Competition",
       "John Locke Essay Competition",
       "Wharton Business Case Competition",
-      "Cambridge Re:think Essay Competition",
+      "Cambridge Re-think Essay Competition",
       "MUN Awards",
       "Youth Excellence in Economics",
     ],
@@ -20,7 +20,7 @@ const navSections = [
     items: ["Cycling", "Music", "Reading"],
   },
   {
-    title: "Research/Publications",
+    title: "Publications",
     items: ["Bandhan AMC", "CEO Fitness Stock Price", "Distressed Value"],
   },
   {
