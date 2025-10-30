@@ -1,39 +1,34 @@
 "use client";
 import { useState, useEffect } from "react";
 import { X, Award, TrendingUp, BookOpen, Star } from "lucide-react";
-
 interface Certificate {
   id: number;
   title: string;
   image: string;
 }
-
 export default function AcademicsPage() {
   const [selectedImage, setSelectedImage] = useState<Certificate | null>(null);
   const [visibleElements, setVisibleElements] = useState(false);
-
   useEffect(() => {
     setTimeout(() => setVisibleElements(true), 100);
   }, []);
-
   const certificates: Certificate[] = [
     {
       id: 1,
       title: "",
-      image: "/BizForHer-Evidence-1.pdf",
+      image: "/bizforher1.png",
     },
     {
       id: 2,
       title: "",
-      image: "/BizForHer-Evidence-2.pdf",
+      image: "/bizforher2.png",
     },
     {
       id: 3,
       title: "",
-      image: "/BizForHer-Evidence-3.pdf",
+      image: "/bizforher3.png",
     },
   ];
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 relative overflow-hidden">
       {/* Animated Background Elements */}
@@ -56,7 +51,6 @@ export default function AcademicsPage() {
           />
         ))}
       </div>
-
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-4 sm:px-8 relative z-10">
         <div className="max-w-6xl mx-auto">
@@ -70,7 +64,6 @@ export default function AcademicsPage() {
             <div className="h-1 w-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full animate-pulse-slow"></div>
             <span className="text-blue-600 font-bold tracking-wider uppercase text-sm"></span>
           </div>
-
           <h1
             className={`text-6xl md:text-7xl font-black mb-6 transition-all duration-1000 delay-100 ${
               visibleElements
@@ -84,7 +77,6 @@ export default function AcademicsPage() {
           </h1>
         </div>
       </section>
-
       {/* Main Content Section */}
       <section className="px-4 sm:px-8 pb-16 relative z-10">
         <div className="max-w-6xl mx-auto">
@@ -103,7 +95,6 @@ export default function AcademicsPage() {
                 Why BizForHer?
               </h2>
             </div>
-
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 leading-relaxed text-lg mb-6">
                 BizForHer started as a question I couldn’t shake off during
@@ -115,7 +106,6 @@ export default function AcademicsPage() {
                 side of that world. A quieter one. Where talent doesn’t always
                 get the same microphone.
               </p>
-
               <p className="text-gray-700 leading-relaxed text-lg mb-6">
                 That’s where BizForHer comes in. I wanted to build something
                 that doesn’t just “talk” about female participation, rather
@@ -126,11 +116,9 @@ export default function AcademicsPage() {
                 honestly, it’s less about finance or pitch decks and more about
                 changing the default setting of who gets to walk into the room.
               </p>
-
               <h2 className="text-4xl font-black bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 Intial Days:
               </h2>
-
               <p className="text-gray-700 leading-relaxed text-lg mb-6">
                 BizForHer started with two teenagers, a laptop, and an absurd
                 number of cold emails to people who had zero clue who we were.
@@ -192,7 +180,6 @@ export default function AcademicsPage() {
           </div>
         </div>
       </section>
-
       {/* Certificates Gallery */}
       <section className="px-4 sm:px-8 pb-20 relative z-10">
         <div className="max-w-6xl mx-auto">
@@ -207,7 +194,6 @@ export default function AcademicsPage() {
               Showcase
             </h2>
           </div>
-
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {certificates.map((cert, idx) => (
               <div
@@ -245,7 +231,6 @@ export default function AcademicsPage() {
           </div>
         </div>
       </section>
-
       {/* Full Screen Modal */}
       {selectedImage && (
         <div
@@ -279,7 +264,6 @@ export default function AcademicsPage() {
           </div>
         </div>
       )}
-
       <style>{`
         @keyframes float {
           0%, 100% { transform: translateY(0px) translateX(0px); }

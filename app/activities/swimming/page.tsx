@@ -20,22 +20,42 @@ export default function AcademicsPage() {
     {
       id: 1,
       title: "",
-      image: "/academic1.png",
+      image: "/swimming1.jpg",
     },
     {
       id: 2,
       title: "",
-      image: "/academic2.png",
+      image: "/swimming2.jpg",
     },
     {
       id: 3,
       title: "",
-      image: "/academic3.png",
+      image: "/swimming3.jpg",
     },
     {
       id: 4,
       title: "",
-      image: "/academic4.png",
+      image: "/swimming4.jpg",
+    },
+    {
+      id: 5,
+      title: "",
+      image: "/swimming5.jpg",
+    },
+    {
+      id: 6,
+      title: "",
+      image: "/swimming6.jpg",
+    },
+    {
+      id: 7,
+      title: "",
+      image: "/swimming7.jpg",
+    },
+    {
+      id: 8,
+      title: "",
+      image: "/swimming8.jpg",
     },
   ];
 

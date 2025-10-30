@@ -16,28 +16,7 @@ export default function AcademicsPage() {
     setTimeout(() => setVisibleElements(true), 100);
   }, []);
 
-  const certificates: Certificate[] = [
-    {
-      id: 1,
-      title: "",
-      image: "/academic1.png",
-    },
-    {
-      id: 2,
-      title: "",
-      image: "/academic2.png",
-    },
-    {
-      id: 3,
-      title: "",
-      image: "/academic3.png",
-    },
-    {
-      id: 4,
-      title: "",
-      image: "/academic4.png",
-    },
-  ];
+  const certificates: Certificate[] = [];
 
   const videos = [
     {
@@ -242,9 +221,6 @@ export default function AcademicsPage() {
                 : "opacity-0 translate-y-10"
             }`}
           >
-            <h2 className="text-4xl md:text-5xl font-black mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Showcase
-            </h2>
             <p className="text-gray-600 text-lg">
               Click on any image to view it in full screen
             </p>

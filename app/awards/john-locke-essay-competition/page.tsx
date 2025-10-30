@@ -20,22 +20,7 @@ export default function AcademicsPage() {
     {
       id: 1,
       title: "",
-      image: "/academic1.png",
-    },
-    {
-      id: 2,
-      title: "",
-      image: "/academic2.png",
-    },
-    {
-      id: 3,
-      title: "",
-      image: "/academic3.png",
-    },
-    {
-      id: 4,
-      title: "",
-      image: "/academic4.png",
+      image: "/john1.png",
     },
   ];
 
@@ -111,8 +96,8 @@ export default function AcademicsPage() {
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 leading-relaxed text-lg mb-6">
                 John Locke was a journey in philosophical rabbit holes,
-                obsessing over a single question - “Should politicians ever be
-                punished for lying?” What started as a casual draft quickly
+                obsessing over a single question - "Should politicians ever be
+                punished for lying?" What started as a casual draft quickly
                 spiraled into long nights of arguing with dead philosophers. One
                 day I was siding with Machiavelli, the next Rawls threw
                 everything off, and then John Locke himself decided to make it
@@ -120,11 +105,11 @@ export default function AcademicsPage() {
               </p>
 
               <p className="text-gray-700 leading-relaxed text-lg mb-6">
-                I’d corner friends in hallways to test arguments, talk to myself
+                I'd corner friends in hallways to test arguments, talk to myself
                 mid-shower, rewrite entire sections at ungodly hours because a
-                single line didn’t sit right. Slowly, the essay turned into less
+                single line didn't sit right. Slowly, the essay turned into less
                 of a competition and more of a duel with the idea itself. By the
-                time I submitted it, I’d memorized every twist in my argument.
+                time I submitted it, I'd memorized every twist in my argument.
               </p>
 
               <p className="text-gray-700 leading-relaxed text-lg mb-6">
@@ -133,6 +118,31 @@ export default function AcademicsPage() {
                 Locke Essay Competition.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* View PDF Button Section */}
+      <section className="px-4 sm:px-8 pb-12 relative z-10">
+        <div className="max-w-6xl mx-auto">
+          <div
+            className={`flex justify-center transition-all duration-1000 delay-800 ${
+              visibleElements
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-10"
+            }`}
+          >
+            <a
+              href="/john.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold text-lg rounded-2xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 overflow-hidden"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <BookOpen className="h-6 w-6 relative z-10 group-hover:rotate-12 transition-transform duration-300" />
+              <span className="relative z-10">View Certificate</span>
+              <TrendingUp className="h-5 w-5 relative z-10 group-hover:translate-x-1 transition-transform duration-300" />
+            </a>
           </div>
         </div>
       </section>

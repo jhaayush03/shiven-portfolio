@@ -20,22 +20,7 @@ export default function AcademicsPage() {
     {
       id: 1,
       title: "",
-      image: "/academic1.png",
-    },
-    {
-      id: 2,
-      title: "",
-      image: "/academic2.png",
-    },
-    {
-      id: 3,
-      title: "",
-      image: "/academic3.png",
-    },
-    {
-      id: 4,
-      title: "",
-      image: "/academic4.png",
+      image: "/cambridge1.png",
     },
   ];
 
@@ -112,12 +97,12 @@ export default function AcademicsPage() {
               <p className="text-gray-700 leading-relaxed text-lg mb-6">
                 Cambridge Rethink was my crash course in how a single word,
                 globalization, can mean entirely different things depending on
-                who’s holding the mic.
+                who's holding the mic.
               </p>
 
               <p className="text-gray-700 leading-relaxed text-lg mb-6">
-                For some, it’s a miracle: free markets, seamless supply chains,
-                rising living standards. For others, it’s a colonizer, widening
+                For some, it's a miracle: free markets, seamless supply chains,
+                rising living standards. For others, it's a colonizer, widening
                 inequality, shipping jobs across borders, flattening cultures. I
                 spent weeks lost somewhere in between.
               </p>
@@ -126,8 +111,8 @@ export default function AcademicsPage() {
                 I remember sitting with a chart showing GDP growth in emerging
                 economies next to stagnant real wages in developed ones.
                 Globalization looked like a tug-of-war, between nations,
-                classes, and identities. The tension wasn’t about whether
-                globalization was “good” or “bad.” It was about who gets to call
+                classes, and identities. The tension wasn't about whether
+                globalization was "good" or "bad." It was about who gets to call
                 it either.
               </p>
               <p className="text-gray-700 leading-relaxed text-lg mb-6">
@@ -137,6 +122,31 @@ export default function AcademicsPage() {
                 manipulation.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* View PDF Button Section */}
+      <section className="px-4 sm:px-8 pb-12 relative z-10">
+        <div className="max-w-6xl mx-auto">
+          <div
+            className={`flex justify-center transition-all duration-1000 delay-800 ${
+              visibleElements
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-10"
+            }`}
+          >
+            <a
+              href="/cambridge.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold text-lg rounded-2xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 overflow-hidden"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <BookOpen className="h-6 w-6 relative z-10 group-hover:rotate-12 transition-transform duration-300" />
+              <span className="relative z-10">View Certificate</span>
+              <TrendingUp className="h-5 w-5 relative z-10 group-hover:translate-x-1 transition-transform duration-300" />
+            </a>
           </div>
         </div>
       </section>

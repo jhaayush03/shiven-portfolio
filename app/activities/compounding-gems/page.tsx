@@ -16,28 +16,7 @@ export default function AcademicsPage() {
     setTimeout(() => setVisibleElements(true), 100);
   }, []);
 
-  const certificates: Certificate[] = [
-    {
-      id: 1,
-      title: "",
-      image: "/academic1.png",
-    },
-    {
-      id: 2,
-      title: "",
-      image: "/academic2.png",
-    },
-    {
-      id: 3,
-      title: "",
-      image: "/academic3.png",
-    },
-    {
-      id: 4,
-      title: "",
-      image: "/academic4.png",
-    },
-  ];
+  const certificates: Certificate[] = [];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 relative overflow-hidden">
@@ -149,11 +128,7 @@ export default function AcademicsPage() {
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-10"
             }`}
-          >
-            <h2 className="text-4xl md:text-5xl font-black mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Showcase
-            </h2>
-          </div>
+          ></div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {certificates.map((cert, idx) => (

@@ -20,22 +20,27 @@ export default function AcademicsPage() {
     {
       id: 1,
       title: "",
-      image: "/academic1.png",
+      image: "/mun1.jpg",
     },
     {
       id: 2,
       title: "",
-      image: "/academic2.png",
+      image: "/mun2.jpg",
     },
     {
       id: 3,
       title: "",
-      image: "/academic3.png",
+      image: "/mun3.jpg",
     },
     {
       id: 4,
       title: "",
-      image: "/academic4.png",
+      image: "/mun4.jpg",
+    },
+    {
+      id: 5,
+      title: "",
+      image: "/mun5.jpg",
     },
   ];
 
