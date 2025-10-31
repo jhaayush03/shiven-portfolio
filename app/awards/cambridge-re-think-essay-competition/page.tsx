@@ -144,7 +144,7 @@ export default function AcademicsPage() {
             >
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <BookOpen className="h-6 w-6 relative z-10 group-hover:rotate-12 transition-transform duration-300" />
-              <span className="relative z-10">View Certificate</span>
+              <span className="relative z-10">View Essay</span>
               <TrendingUp className="h-5 w-5 relative z-10 group-hover:translate-x-1 transition-transform duration-300" />
             </a>
           </div>

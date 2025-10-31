@@ -1,28 +1,13 @@
 "use client";
 import { useState, useEffect } from "react";
-import { X, Award, TrendingUp, BookOpen, Star } from "lucide-react";
-
-interface Certificate {
-  id: number;
-  title: string;
-  image: string;
-}
+import { TrendingUp, BookOpen } from "lucide-react";
 
 export default function AcademicsPage() {
-  const [selectedImage, setSelectedImage] = useState<Certificate | null>(null);
   const [visibleElements, setVisibleElements] = useState(false);
 
   useEffect(() => {
     setTimeout(() => setVisibleElements(true), 100);
   }, []);
-
-  const certificates: Certificate[] = [
-    {
-      id: 1,
-      title: "",
-      image: "/john1.png",
-    },
-  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 relative overflow-hidden">
@@ -93,30 +78,44 @@ export default function AcademicsPage() {
               </div>
             </div>
 
-            <div className="prose prose-lg max-w-none">
-              <p className="text-gray-700 leading-relaxed text-lg mb-6">
-                John Locke was a journey in philosophical rabbit holes,
-                obsessing over a single question - "Should politicians ever be
-                punished for lying?" What started as a casual draft quickly
-                spiraled into long nights of arguing with dead philosophers. One
-                day I was siding with Machiavelli, the next Rawls threw
-                everything off, and then John Locke himself decided to make it
-                worse.
-              </p>
+            <div className="grid md:grid-cols-[1fr_400px] gap-8 items-start">
+              <div className="prose prose-lg max-w-none">
+                <p className="text-gray-700 leading-relaxed text-lg mb-6">
+                  John Locke was a journey in philosophical rabbit holes,
+                  obsessing over a single question - "Should politicians ever be
+                  punished for lying?" What started as a casual draft quickly
+                  spiraled into long nights of arguing with dead philosophers.
+                  One day I was siding with Machiavelli, the next Rawls threw
+                  everything off, and then John Locke himself decided to make it
+                  worse.
+                </p>
 
-              <p className="text-gray-700 leading-relaxed text-lg mb-6">
-                I'd corner friends in hallways to test arguments, talk to myself
-                mid-shower, rewrite entire sections at ungodly hours because a
-                single line didn't sit right. Slowly, the essay turned into less
-                of a competition and more of a duel with the idea itself. By the
-                time I submitted it, I'd memorized every twist in my argument.
-              </p>
+                <p className="text-gray-700 leading-relaxed text-lg mb-6">
+                  I'd corner friends in hallways to test arguments, talk to
+                  myself mid-shower, rewrite entire sections at ungodly hours
+                  because a single line didn't sit right. Slowly, the essay
+                  turned into less of a competition and more of a duel with the
+                  idea itself. By the time I submitted it, I'd memorized every
+                  twist in my argument.
+                </p>
 
-              <p className="text-gray-700 leading-relaxed text-lg mb-6">
-                And when the results came in, that stubbornness paid off - I
-                walked away with a Very High Commendation Award for the John
-                Locke Essay Competition.
-              </p>
+                <p className="text-gray-700 leading-relaxed text-lg mb-6">
+                  And when the results came in, that stubbornness paid off - I
+                  walked away with a Very High Commendation Award for the John
+                  Locke Essay Competition.
+                </p>
+              </div>
+
+              <div className="relative group">
+                <div className="relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 border-4 border-purple-200 hover:border-purple-400 transform hover:scale-105">
+                  <img
+                    src="/john1.png"
+                    alt="John Locke Award Certificate"
+                    className="w-full h-auto object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-purple-600/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -140,99 +139,12 @@ export default function AcademicsPage() {
             >
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <BookOpen className="h-6 w-6 relative z-10 group-hover:rotate-12 transition-transform duration-300" />
-              <span className="relative z-10">View Certificate</span>
+              <span className="relative z-10">View Essay</span>
               <TrendingUp className="h-5 w-5 relative z-10 group-hover:translate-x-1 transition-transform duration-300" />
             </a>
           </div>
         </div>
       </section>
-
-      {/* Certificates Gallery */}
-      <section className="px-4 sm:px-8 pb-20 relative z-10">
-        <div className="max-w-6xl mx-auto">
-          <div
-            className={`text-center mb-12 transition-all duration-1000 delay-900 ${
-              visibleElements
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-10"
-            }`}
-          >
-            <h2 className="text-4xl md:text-5xl font-black mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Showcase
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {certificates.map((cert, idx) => (
-              <div
-                key={cert.id}
-                className={`group cursor-pointer transition-all duration-700 ${
-                  visibleElements
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-10"
-                }`}
-                style={{ transitionDelay: `${1000 + idx * 150}ms` }}
-                onClick={() => setSelectedImage(cert)}
-              >
-                <div className="relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 bg-white border-4 border-transparent hover:border-purple-300 transform hover:scale-105 hover:-rotate-2">
-                  <div className="aspect-[3/4] relative">
-                    <img
-                      src={cert.image}
-                      alt={cert.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <div className="bg-white/90 backdrop-blur-sm rounded-full p-4 transform scale-75 group-hover:scale-100 transition-transform duration-300">
-                        <Award className="h-8 w-8 text-purple-600" />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                    <p className="text-white font-bold text-sm text-center">
-                      {cert.title}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Full Screen Modal */}
-      {selectedImage && (
-        <div
-          className="fixed inset-0 bg-black/95 backdrop-blur-md z-50 flex items-center justify-center p-4 animate-fade-in"
-          onClick={() => setSelectedImage(null)}
-        >
-          <div
-            className="relative max-w-5xl w-full max-h-[90vh] animate-scale-in"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              onClick={() => setSelectedImage(null)}
-              className="absolute -top-12 right-0 text-white hover:text-purple-400 transition-colors duration-300 bg-white/10 backdrop-blur-sm rounded-full p-3 hover:bg-white/20 hover:rotate-90 transform transition-all"
-            >
-              <X className="h-8 w-8" />
-            </button>
-            <div className="bg-white rounded-2xl overflow-hidden shadow-2xl">
-              <div className="p-6 bg-gradient-to-r from-blue-500 to-purple-500">
-                <h3 className="text-2xl font-bold text-white text-center">
-                  {selectedImage.title}
-                </h3>
-              </div>
-              <div className="p-8">
-                <img
-                  src={selectedImage.image}
-                  alt={selectedImage.title}
-                  className="w-full h-auto object-contain rounded-lg shadow-lg"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
 
       <style>{`
         @keyframes float {
@@ -253,22 +165,6 @@ export default function AcademicsPage() {
         @keyframes gradient {
           0%, 100% { background-position: 0% 50%; }
           50% { background-position: 100% 50%; }
-        }
-
-        @keyframes fade-in {
-          from { opacity: 0; }
-          to { opacity: 1; }
-        }
-
-        @keyframes scale-in {
-          from {
-            opacity: 0;
-            transform: scale(0.9);
-          }
-          to {
-            opacity: 1;
-            transform: scale(1);
-          }
         }
 
         .animate-float {
@@ -292,14 +188,6 @@ export default function AcademicsPage() {
 
         .animate-pulse-slow {
           animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-        }
-
-        .animate-fade-in {
-          animation: fade-in 0.4s ease-out forwards;
-        }
-
-        .animate-scale-in {
-          animation: scale-in 0.4s ease-out forwards;
         }
       `}</style>
     </div>

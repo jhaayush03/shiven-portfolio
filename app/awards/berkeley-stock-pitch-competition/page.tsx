@@ -146,14 +146,37 @@ export default function AcademicsPage() {
             }`}
           >
             <a
-              href="/Berkeley.pdf"
+              href="/Berkeley1.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="group relative inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold text-lg rounded-2xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 overflow-hidden"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <BookOpen className="h-6 w-6 relative z-10 group-hover:rotate-12 transition-transform duration-300" />
-              <span className="relative z-10">View Certificate</span>
+              <span className="relative z-10">View Presentation 1</span>
+              <TrendingUp className="h-5 w-5 relative z-10 group-hover:translate-x-1 transition-transform duration-300" />
+            </a>
+          </div>
+        </div>
+      </section>
+      <section className="px-4 sm:px-8 pb-12 relative z-10">
+        <div className="max-w-6xl mx-auto">
+          <div
+            className={`flex justify-center transition-all duration-1000 delay-800 ${
+              visibleElements
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-10"
+            }`}
+          >
+            <a
+              href="/Berkeley2.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold text-lg rounded-2xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 overflow-hidden"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <BookOpen className="h-6 w-6 relative z-10 group-hover:rotate-12 transition-transform duration-300" />
+              <span className="relative z-10">View Presentation 2</span>
               <TrendingUp className="h-5 w-5 relative z-10 group-hover:translate-x-1 transition-transform duration-300" />
             </a>
           </div>
