@@ -5,6 +5,18 @@ import { Button } from "@/components/ui/button";
 
 const navSections = [
   {
+    title: "Activities",
+    items: [
+      "BizForHer",
+      "Invesh AI",
+      "Success Documented",
+      "Yale Young Global Scholars",
+      "Compounding Gems",
+      "Project Dwaar",
+      "Swimming",
+    ],
+  },
+  {
     title: "Awards",
     items: [
       "Berkeley Stock Pitch Competition",
@@ -16,24 +28,12 @@ const navSections = [
     ],
   },
   {
-    title: "Shiven Tidbits",
-    items: ["Cycling", "Music", "Reading"],
-  },
-  {
     title: "Publications",
     items: ["Bandhan AMC", "CEO Fitness Stock Price", "Distressed Value"],
   },
   {
-    title: "Activities",
-    items: [
-      "BizForHer",
-      "Invesh AI",
-      "Success Documented",
-      "Yale Young Global Scholars",
-      "Compounding Gems",
-      "Project Dwaar",
-      "Swimming",
-    ],
+    title: "Shiven Tidbits",
+    items: ["Cycling", "Music", "Reading"],
   },
 ];
 
@@ -116,19 +116,12 @@ export function Navigation() {
             </div>
           ))}
 
-          <button
-            onClick={handleResumeClick}
-            className="text-sm font-medium text-black hover:text-gray-700 transition-colors"
-          >
-            Resume
-          </button>
-
           <Button
             variant="secondary"
             className="bg-blue-600 text-white hover:bg-blue-700"
             onClick={() =>
               window.open(
-                "https://mail.google.com/mail/?view=cm&fs=1&to=xyz@gmail.com",
+                "https://mail.google.com/mail/?view=cm&fs=1&to=skhandelwal6@jpischool.com",
                 "_blank"
               )
             }
@@ -140,7 +133,10 @@ export function Navigation() {
             variant="secondary"
             className="bg-blue-600 text-white hover:bg-blue-700"
             onClick={() =>
-              window.open("https://www.linkedin.com/in/xyz/", "_blank")
+              window.open(
+                "https://www.linkedin.com/in/shiven-khandelwal-61915a2a4/",
+                "_blank"
+              )
             }
           >
             LinkedIn
@@ -151,7 +147,7 @@ export function Navigation() {
       {/* Mobile Navigation */}
       <div className="flex lg:hidden items-center justify-between">
         <a href="/" className="text-2xl font-extrabold text-black">
-          PORTFOLIO
+          SHIVEN
         </a>
 
         <button
@@ -171,13 +167,6 @@ export function Navigation() {
       {mobileMenuOpen && (
         <div className="lg:hidden absolute left-0 right-0 top-full bg-blue-100 border-t border-gray-300">
           <div className="flex flex-col p-4 space-y-1">
-            <button
-              onClick={handleResumeClick}
-              className="px-4 py-3 text-sm font-medium text-gray-600 hover:bg-blue-200 rounded-md text-left"
-            >
-              Resume
-            </button>
-
             {navSections.map((section) => (
               <div key={section.title} className="space-y-1">
                 {section.items.length > 0 ? (
@@ -231,7 +220,7 @@ export function Navigation() {
               variant="secondary"
               className="bg-blue-600 text-white hover:bg-blue-700 mt-4"
             >
-              <a href="mailto:XYZ@gmail.com">Contact Me</a>
+              <a href="mailto:skhandelwal6@jpischool.com">Contact Me</a>
             </Button>
           </div>
         </div>

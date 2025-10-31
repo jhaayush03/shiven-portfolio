@@ -55,24 +55,11 @@ export function Hero() {
             <div className="flex flex-wrap gap-4 pt-4">
               <button
                 onClick={() =>
-                  window.open(
-                    "https://mail.google.com/mail/?view=cm&fs=1&to=",
-                    "_blank"
-                  )
+                  window.open("mail to: skhandelwal6@jpischool.com", "_blank")
                 }
                 className="px-8 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
               >
                 Get in Touch
-              </button>
-              <button
-                onClick={() => {
-                  document
-                    .getElementById("about")
-                    ?.scrollIntoView({ behavior: "smooth" });
-                }}
-                className="px-8 py-3 bg-white text-gray-900 font-medium rounded-lg border-2 border-gray-300 hover:border-gray-400 transition-colors"
-              >
-                Learn More
               </button>
             </div>
 
@@ -81,13 +68,13 @@ export function Hero() {
               <a
                 onClick={() =>
                   window.open(
-                    "https://mail.google.com/mail/?view=cm&fs=1&to=xyz@gmail.com",
+                    "https://mail.google.com/mail/?view=cm&fs=1&to=skhandelwal6@jpischool.com",
                     "_blank"
                   )
                 }
                 className="text-sm text-gray-600 hover:text-gray-900 transition-colors cursor-pointer"
               >
-                xyz@gmail.com
+                skhandelwal6@jpischool.com
               </a>
               <a
                 href="https://www.linkedin.com/in/xyz/"

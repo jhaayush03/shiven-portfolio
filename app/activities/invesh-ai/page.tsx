@@ -5,7 +5,7 @@ import { FileText } from "lucide-react";
 export default function AcademicsPage() {
   useEffect(() => {
     // Open PDF in new tab when component mounts
-    window.open("/mathematical-modals", "_blank");
+    window.open("/mathematical-modals.pdf", "_blank");
   }, []);
 
   return (

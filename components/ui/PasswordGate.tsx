@@ -12,7 +12,7 @@ const PasswordGate = ({ children }: PasswordGateProps) => {
   const [error, setError] = useState("");
 
   // Your actual password - CHANGE THIS!
-  const CORRECT_PASSWORD = "myportfolio2024";
+  const CORRECT_PASSWORD = "Chameleon328";
 
   // Check if user is already authenticated (using sessionStorage)
   useEffect(() => {
